@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+ 
+}
+
+.carousel {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  gap:16px;
+  width:80vw;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%; /* Ancho del carousel ajustable según tus necesidades */
+  position: relative;
+}
+
+.card {
+  position: fixed;
+  width:150px; /* Ancho de cada card ajustable según tus necesidades */
+  height: 250px; /* Altura de cada card ajustable según tus necesidades */
+  background-color: #3eae;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  /* margin-left: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+.arrow-left, .arrow-right{
+  cursor:pointer;
+  font-size:28px;
+  font-weight:bold;
+  background-color:#f0f0f0;
+  border-radius:50%;
+  height:30px;
+  width:30px;
+  border:1px solid black;
+  text-align:center;
+}
