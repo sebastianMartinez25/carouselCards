@@ -1,7 +1,8 @@
 body {
-  display: flex;
+   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   margin: 0;
  
@@ -22,6 +23,7 @@ body {
   overflow: hidden;
   width: 100%; /* Ancho del carousel ajustable según tus necesidades */
   position: relative;
+  
 }
 
 .card {
@@ -37,6 +39,7 @@ body {
   align-items: center;
   font-size: 20px;
   border-radius: 8px;
+
 }
 
 .arrow-left, .arrow-right{
@@ -49,4 +52,32 @@ body {
   width:30px;
   border:1px solid black;
   text-align:center;
+  
+}
+.arrow-left:hover, .arrow-right:hover{
+  background-color: aquamarine;
+}
+
+.control-dots{
+  margin-top: 150px;
+  text-align: center;
+  background-color: #1e2229;
+  border-radius: 100px;
+  display: flex;
+}
+
+li{
+  background-color: white;
+  list-style: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin: 8px;
+  cursor: pointer;
+}
+li:hover{
+  background-color: aquamarine;
+}
+.dot-active{
+  background-color: aqua;
 }
